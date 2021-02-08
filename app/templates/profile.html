@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="flex text-center">
+  <div class="custom-col">
+    <div class="custom-card">
+      <div class="custom-card-top text-white">
+        <a href="#">
+          <img src="{{ url_for('static', filename='images/user.svg') }}" width="" height="" alt="Some sample words">
+        </a>
+
+        <h2>Dexter Small</h2>
+        <p class="mb-1">@dextersmall</p>
+        <p class="mb-1">Plymouth, Montserrat</p>
+        <p>{{ date_joined }}</p>
+      </div>
+      <div class="custom-card-body">
+        <p class="custom-text-muted mb-4">
+        Hello, I am a computer science student at the University of the West Indies - Mona Campus 
+        I enjoy making software with python, ruby with stimulus js, javascript.
+       </p>
+
+        <div class="flex mb-3">
+          <div class="col">
+            <h4>7</h4>
+            <p class="custom-text-muted">Posts</p>
+          </div>
+
+          <div class="col">
+            <h4>100</h4>
+            <p class="custom-text-muted">Following</p>
+              
+          </div>
+          <div class="col">
+            <h4>250</h4>
+            <p class="custom-text-muted">Followers</p>
+          </div>
+        </div>
+
+        <a class="custom-btn custom-btn-primary" href="#">Follow</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
